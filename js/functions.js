@@ -8,6 +8,6 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-document.getElementById('refresh').addEventListener('click', function() {
+document.getElementById('Rgitefresh').addEventListener('click', function() {
         location.reload();
     })
