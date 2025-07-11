@@ -1,8 +1,17 @@
 
 let randomNumber = Math.floor(Math.random() * 3 + 1);
 
-let computerMove = 'Nieznany ruch'
+function getMoveName(argMoveId){
+  if(argMoveId == 1){
+    return 'kamień';
+  } else {
+    printMessage('Nie znam ruchu o id ' + argMoveId + '.');
+    return 'nieznany ruch';
+  }
+}
 
+let computerMove = 'Nieznany ruch'
+/*
 if(randomNumber == 1){
     computerMove = 'Papier';
 }
@@ -12,7 +21,7 @@ else if(randomNumber == 2){
 else {
     computerMove = 'Nozyce';
 }
-
+*/
 printMessage('Mój ruch to: ' + computerMove);
 
 let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
