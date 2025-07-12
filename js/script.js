@@ -2,7 +2,7 @@ let playerInput;
 
 function playGame(playerInput){
 
-    clearMessages
+    clearMessages()
 
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
@@ -35,8 +35,6 @@ function playGame(playerInput){
     }
     */
 
-    printMessage('Mój ruch to: ' + argComputerMove);
-
    // let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
 
     // console.log('Gracz wpisał: ' + playerInput);
@@ -65,9 +63,6 @@ function playGame(playerInput){
         }
         else if (argComputerMove == argPlayerMove){
             winMessage = 'Remis';
-        }
-        else if(argPlayerMove == 'nieznany ruch'){
-            winMessage = 'Jak Ty poskładałeś te paluchy w takie coś? Co ja mam z tym zrobić? Powtórka!';
         }
         else {
             winMessage = 'Wygrałeś';
