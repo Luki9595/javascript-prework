@@ -55,32 +55,20 @@ function displayResult(argComputerMove, argPlayerMove){
     if(argComputerMove == 'Papier' && argPlayerMove == 'Kamien'){
         winMessage = 'Wygrałem';
     }
-    else if(argComputerMove == 'Papier' && argPlayerMove == 'Nozyce'){
-        winMessage = 'Wygrałeś';
-    }
-    else if(argComputerMove == 'Papier' && argPlayerMove == 'Papier'){
-        winMessage = 'Remis';
-    }
     else if(argComputerMove == 'Nozyce' && argPlayerMove == 'Papier'){
         winMessage = 'Wygrałem';
-    }
-    else if(argComputerMove == 'Nozyce' && argPlayerMove == 'Kamien'){
-        winMessage = 'Wygrałeś';
-    }
-    else if(argComputerMove == 'Nozyce' && argPlayerMove == 'Nozyce'){
-        winMessage = 'Remis';
-    }
-    else if(argComputerMove == 'Kamien' && argPlayerMove == 'Kamien'){
-        winMessage = 'Remis';
     }
     else if(argComputerMove == 'Kamien' && argPlayerMove == 'Nozyce'){
         winMessage = 'Wygrałem';
     }
-    else if (argComputerMove == 'Kamien' && argPlayerMove =='Papier'){
-        winMessage = 'Wygrałeś';
+    else if (argComputerMove == argPlayerMove){
+        winMessage = 'Remis';
+    }
+    else if(argPlayerMove == 'nieznany ruch'){
+        winMessage = 'Jak Ty poskładałeś te paluchy w takie coś? Co ja mam z tym zrobić? Powtórka!';
     }
     else {
-        winMessage = 'Co Ty za znaki gangów rzucasz tymi rencyma?';
+        winMessage = 'Wygrałeś';
     }
     return winMessage;
 }
