@@ -2,6 +2,8 @@ let playerInput;
 
 function playGame(playerInput){
 
+    clearMessages
+
     let randomNumber = Math.floor(Math.random() * 3 + 1);
 
     function getMoveName(argMoveId){
